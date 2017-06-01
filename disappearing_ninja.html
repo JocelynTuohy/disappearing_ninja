@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="disappearing_ninja_style.css">
+    <title>Disappearing Ninjas</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    
+    $('document').ready(function(){
+
+      $('img').click(function(){
+        $(this).hide();
+      });
+      $('button').click(function(){
+        $('img').show();
+      })
+
+    });
+    
+    </script>
+  </head>
+  <body>
+    <div id="wrapper">
+      <h1>jQuery: Disappearing Ninja Assignment</h1>
+      <div>
+        <img src="images/Realistic-Teenage-Mutant-Ninja-Turtles-Portraits-1.jpg" alt="Ninja Turtle Image 1">
+        <img src="images/Realistic-Teenage-Mutant-Ninja-Turtles-Portraits-2.jpg" alt="Ninja Turtle Image 2">
+        <img src="images/Realistic-Teenage-Mutant-Ninja-Turtles-Portraits-3.jpg" alt="Ninja Turtle Image 3">
+        <img src="images/Realistic-Teenage-Mutant-Ninja-Turtles-Portraits-4.jpg" alt="Ninja Turtle Image 4">
+      </div>
+      <div>
+        <img src="images/Realistic-Teenage-Mutant-Ninja-Turtles-Portraits-5.jpg" alt="Ninja Turtle Image 5">
+        <img src="images/Realistic-Teenage-Mutant-Ninja-Turtles-Portraits-6.jpg" alt="Ninja Turtle Image 6">
+        <img src="images/Realistic-Teenage-Mutant-Ninja-Turtles-Portraits-7.jpg" alt="Ninja Turtle Image 7">
+        <img src="images/Realistic-Teenage-Mutant-Ninja-Turtles-Portraits-8.jpg" alt="Ninja Turtle Image 8">
+      </div>
+      <button>Restore</button>
+    </div>
+  </body>
+</html>
